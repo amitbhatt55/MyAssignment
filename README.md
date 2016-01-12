@@ -11,8 +11,14 @@ This project starts from PlaceOrder.java file where call is made to place the or
         
 This Order calls inturn invokes Product, where fist argument is Product Id, Second argument is Product Name and Third One is Quantity.
 
-This Order class also has provision to compute the price based on Product Type and Quantity wherein it invokes properties file where all the price is defined and it is assumed that this price is received from some external source and placed on daily basis
-com.myproject.price.Price;
+This Order class also has provision to compute the price based on Product Type and Quantity wherein it invokes properties file(resources/price.properties) where all the price is defined and it is assumed that this price is received from some external source and placed on daily basis.Following is the format of price.
+
+Bananas=8
+Oranges=2
+Apples=9
+Lemons=3 
+Peaches=7
+
 
 There is also a provision to handle Userdefined Exception
 com.myproject.shopping.exception.ProductNotFoundException;
